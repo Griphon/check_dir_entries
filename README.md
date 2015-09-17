@@ -3,5 +3,5 @@ Counts entries (optionally with regexp) of a directory. Checks it with threshold
 
 depends of Nagios::Plugin
 
-Usage: check_dir_entries.pl [ -m|--mask <mask>] [ -c|--critical=<threshold> ] [ -w|--warning=<threshold> ] path
+Usage: check_dir_entries.pl [ -f|--filter <mask>] [ -c|--critical=<threshold> ] [ -w|--warning=<threshold> ] path
 

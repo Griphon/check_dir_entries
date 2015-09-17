@@ -22,13 +22,13 @@
 use Nagios::Plugin;
 
 my $np = Nagios::Plugin->new(
-           usage => "Usage: %s [ -m|--mask <mask>]"
+           usage => "Usage: %s [ -f|--filter <filter>]"
            . " [ -c|--critical=<threshold> ] [ -w|--warning=<threshold> ] path",
                             );
 
 my @args = ({
               spec => 'filter|f=s',
-              help => '--mask|-m <mask> list mask',
+              help => '--filter|-f <filter> list regular expression',
             },{
               spec => 'warning|w=s',
               help => '--warning|-w <threshold>',
